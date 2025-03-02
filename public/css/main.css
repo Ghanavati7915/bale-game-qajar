@@ -1,0 +1,31 @@
+/* For WebKit-based browsers */
+::-webkit-scrollbar {
+    width: 7px; /* Width of the scrollbar */
+}
+
+/* Track (background) */
+::-webkit-scrollbar-track {
+    background: #d3d3d3; /* Color of the track */
+    border-radius: 5px;
+}
+
+/* Handle (thumb) */
+::-webkit-scrollbar-thumb {
+    background: #a9a9a9; /* Color of the handle */
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #d3d3d3; /* Color of the handle when hovered */
+}
+
+
+
+
+.dir-rtl {
+ direction : rtl
+}
+.dir-ltr {
+  direction : ltr
+}
