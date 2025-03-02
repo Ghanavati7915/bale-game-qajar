@@ -43,7 +43,7 @@ const addObjectToKonva = (imgSrc: string) => {
       x: randomX,
       y: randomY,
       width: 250,
-      height: 250,
+      // height: 250,
       image: img,
       draggable: true,
     })
@@ -160,11 +160,11 @@ body {
   background-color: #c3c3b6;
 }
 .navbar {
-  @apply w-screen h-28 z-50 fixed bottom-0 left-0 bg-rose-500/50 flex justify-center items-center;
+  @apply w-screen h-24 z-50 fixed bottom-0 left-0 bg-rose-500/50 flex justify-center items-center;
 }
 
 .item {
-  @apply w-28 h-28 flex -mt-10 mx-3 transition-all duration-150 ease-in-out hover:-mt-16 cursor-pointer;
+  @apply w-32 h-32 flex -mt-10 mx-3 transition-all duration-150 ease-in-out hover:-mt-16 cursor-pointer;
 }
 
 .item img {
