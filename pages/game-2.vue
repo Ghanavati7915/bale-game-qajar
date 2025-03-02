@@ -42,7 +42,7 @@ const addObjectToKonva = (imgSrc: string) => {
     objects.value.push({
       x: randomX,
       y: randomY,
-      width: 250,
+      // width: 250,
       // height: 250,
       image: img,
       draggable: true,
