@@ -21,7 +21,8 @@ const backgroundImageConfig = ref({
 
 const init = () => {
   const img = new window.Image()
-  img.src = '/img/bg.jpg'
+  // img.src = '/img/bg.jpg'
+  img.src = '/testGame/img/bg.jpg'
   img.onload = () => {
     backgroundImageConfig.value.image = img
   }
