@@ -14,14 +14,14 @@ const configKonva = ref({
 const backgroundImageConfig = ref({
   x: 0,
   y: 0,
-  width: 2500,
-  height: 1400,
+  width: 1872,
+  height: 1062,
   image: null,
 })
 
 const init = () => {
   const img = new window.Image()
-  img.src = '/img/bg2.jpg'
+  img.src = '/img/bg.jpg'
   img.onload = () => {
     backgroundImageConfig.value.image = img
   }
@@ -42,8 +42,8 @@ const addObjectToKonva = (imgSrc: string) => {
     objects.value.push({
       x: randomX,
       y: randomY,
-      width: 250,
-      height: 250,
+      width: 100,
+      height: 100,
       image: img,
       draggable: true,
     })
@@ -130,26 +130,14 @@ onMounted(() => {
     </v-stage>
 
     <div class="navbar">
-      <div class="item" @click="addObjectToKonva('/img/sample/building-4.png')">
-        <img src="/img/sample/building-4.png" alt="building-4" />
+      <div class="item" @click="addObjectToKonva('/img/sample/building-1.png')">
+        <img src="/img/sample/building-1.png" alt="building-1" />
       </div>
-      <div class="item" @click="addObjectToKonva('/img/sample/building-5.png')">
-        <img src="/img/sample/building-5.png" alt="building-5" />
+      <div class="item" @click="addObjectToKonva('/img/sample/building-2.png')">
+        <img src="/img/sample/building-2.png" alt="building-2" />
       </div>
-      <div class="item" @click="addObjectToKonva('/img/sample/building-6.png')">
-        <img src="/img/sample/building-6.png" alt="building-6" />
-      </div>
-      <div class="item" @click="addObjectToKonva('/img/sample/building-7.png')">
-        <img src="/img/sample/building-7.png" alt="building-7" />
-      </div>
-      <div class="item" @click="addObjectToKonva('/img/sample/building-8.png')">
-        <img src="/img/sample/building-8.png" alt="building-8" />
-      </div>
-      <div class="item" @click="addObjectToKonva('/img/sample/building-9.png')">
-        <img src="/img/sample/building-9.png" alt="building-9" />
-      </div>
-      <div class="item" @click="addObjectToKonva('/img/sample/building-10.png')">
-        <img src="/img/sample/building-10.png" alt="building-10" />
+      <div class="item" @click="addObjectToKonva('/img/sample/building-3.png')">
+        <img src="/img/sample/building-3.png" alt="building-3" />
       </div>
     </div>
   </div>
@@ -157,14 +145,14 @@ onMounted(() => {
 
 <style>
 body {
-  background-color: #c3c3b6;
+  background-color: #4a7b39;
 }
 .navbar {
   @apply w-screen h-28 z-50 fixed bottom-0 left-0 bg-rose-500/50 flex justify-center items-center;
 }
 
 .item {
-  @apply w-28 h-28 flex -mt-10 mx-3 transition-all duration-150 ease-in-out hover:-mt-16 cursor-pointer;
+  @apply w-32 h-32 flex -mt-10 mx-5 transition-all duration-150 ease-in-out hover:-mt-16 cursor-pointer;
 }
 
 .item img {

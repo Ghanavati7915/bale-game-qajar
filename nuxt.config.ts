@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   app: {
     // baseURL:'/testGame/',
     head: {
-      title: 'قجرتایم',
+      title: 'روزی روزگاری ایران - قاجار',
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
       link: [
@@ -12,7 +12,7 @@ export default defineNuxtConfig({
         { rel: "apple-touch-startup-image", href: "/favicon.ico" },
       ],
       meta: [
-        { name: 'description', content: 'قجرتایم' },
+        { name: 'description', content: 'روزی روزگاری ایران - قاجار' },
         { hid: "version", name: "version", content: "0.1" },
         { name: "HandheldFriendly", content: "true" },
       ]
