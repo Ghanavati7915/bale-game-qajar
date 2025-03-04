@@ -14,6 +14,7 @@
     "konva": "^9.3.18",
     "nuxt": "^3.15.4",
     "vue": "latest",
+    "swiper": "^11.1.15",
     "vue-konva": "^3.2.0",
     "vue-router": "latest"
   }

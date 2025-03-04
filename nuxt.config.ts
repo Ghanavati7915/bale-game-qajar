@@ -15,7 +15,12 @@ export default defineNuxtConfig({
         { name: 'description', content: 'روزی روزگاری ایران - قاجار' },
         { hid: "version", name: "version", content: "0.1" },
         { name: "HandheldFriendly", content: "true" },
-      ]
+      ],
+      script: [
+        {
+          src: 'https://tapi.bale.ai/miniapp.js?1',
+        }
+      ],
     },
     pageTransition: { name: "page", mode: "out-in" },
     layoutTransition: { name: "layout", mode: "out-in" },
